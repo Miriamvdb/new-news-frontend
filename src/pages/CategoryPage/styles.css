@@ -1,0 +1,38 @@
+.container-categorypage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+}
+
+.title-categorypage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: yellow;
+  width: 100%;
+  height: 6rem;
+  margin-bottom: 3rem;
+}
+
+.button-categorypage {
+  background-color: rgb(240, 240, 240);
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  text-align: center;
+}
+
+.text-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.icon-categorypage {
+  padding-top: 0.15rem;
+  padding-left: 0.5rem;
+}
