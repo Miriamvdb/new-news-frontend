@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { ArticleDetails, CategoryPage, Homepage, SearchArticle } from "./pages";
 import "./App.css";
-import { NavBar } from "./components/NavBar";
+import { NavBar } from "./components";
 
 function App() {
   return (

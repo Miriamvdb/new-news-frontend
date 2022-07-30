@@ -1,0 +1,17 @@
+.container-articlecard {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-bottom: 3rem;
+  background-color: rgb(240, 240, 240);
+}
+
+.text-articlecard {
+  padding: 1rem 2rem;
+}
+
+.image-articlecard {
+  width: 200px;
+  padding: 1rem;
+  /* padding-right: 1rem; */
+}

@@ -17,11 +17,12 @@
 }
 
 .button-homepage {
-  background-color: rgb(240, 240, 240);
+  background-color: yellow;
   width: 10rem;
   height: 3rem;
   border: none;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .text-button {
