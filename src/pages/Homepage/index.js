@@ -1,26 +1,9 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
 import { FiChevronsRight } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 import { ArticleCard } from "../../components/ArticleCard";
 import "./styles.css";
 
-const Homepage = () => {
-  const [articleList, setArticleList] = useState([]);
-
-  useEffect(() => {
-    const getArticles = async () => {
-      try {
-        const response = await axios.get("http://localhost:4000/articles");
-        console.log(response.data);
-        setArticleList(response.data);
-      } catch (e) {
-        console.log(e.message);
-      }
-    };
-    getArticles();
-  }, []);
-
+const Homepage = ({ articleList }) => {
   // newest articles first
   const compareArticles = (articleA, articleB) => {
     return articleB.unixTimeStamp - articleA.unixTimeStamp;
@@ -58,7 +41,11 @@ const Homepage = () => {
         <NavLink to="/searcharticle">
           <button className="button-homepage">
             <h3 className="text-button">
-              Go to articles <FiChevronsRight className="icon-homepage" />
+              Search articles{" "}
+              <FiChevronsRight
+                style={{ color: "tomato" }}
+                className="icon-homepage"
+              />
             </h3>
           </button>
         </NavLink>
