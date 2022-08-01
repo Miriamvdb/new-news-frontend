@@ -16,23 +16,27 @@
   margin-bottom: 3rem;
 }
 
-.button-categorypage {
-  background-color: rgb(240, 240, 240);
-  width: 10rem;
-  height: 3rem;
-  border: none;
-  text-align: center;
+.icon-categorypage {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.text-button {
+.container-category-article {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 15px;
-  cursor: pointer;
+  text-align: left;
+  gap: 2rem;
 }
 
-.icon-categorypage {
-  padding-top: 0.15rem;
-  padding-left: 0.5rem;
+.category-article {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 240, 240);
+  padding: 1rem 2rem;
+  width: 25%;
+}
+
+.image-category-article {
+  width: 100%;
 }
