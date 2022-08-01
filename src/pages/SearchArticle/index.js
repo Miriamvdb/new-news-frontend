@@ -32,7 +32,7 @@ const SearchArticle = ({ articleList }) => {
           <form>
             <input
               className="input-searcharticle"
-              type="text"
+              type="search"
               value={filterArticle}
               onChange={updateFilterArticle}
               placeholder="Search article.."
